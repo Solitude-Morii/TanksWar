@@ -8,7 +8,7 @@ public class Recorder {
     private static int allEnemyTankNum = 0;
     private static BufferedWriter bw = null;
     private static BufferedReader br = null;
-    private static String recordFile = "src\\myRecord.txt";
+    private static String recordFile = "src\\Data\\myRecord.txt";
 
     private static Vector<EnemyTank> enemyTanks = new Vector<>();
     private static Vector<TankInfo> tankInfos = new Vector<>();

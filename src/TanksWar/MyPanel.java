@@ -34,7 +34,7 @@ public class MyPanel extends JPanel implements KeyListener, Runnable {
         hero.setSpeed(5);
 
         //敌方坦克初始
-        if ((tankInfos = Recorder.getTankInfos()) == null) {
+        if ((tankInfos = Recorder.getTankInfos()) == null && key.equals("2")) {
             System.out.println("没有上局记录,只能开启新游戏");
             key = "1";
         }
@@ -71,7 +71,7 @@ public class MyPanel extends JPanel implements KeyListener, Runnable {
         image3 = Toolkit.getDefaultToolkit().getImage(MyPanel.class.getResource("/bomb_3.gif"));
 
         //音乐初始化
-        new AePlayWave("src\\111.wav").start();
+        new AePlayWave("src\\Data\\111.wav").start();
     }
 
     @Override
